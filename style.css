@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    background-color: rgb(172, 64, 235);
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.converter-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+select,
+button {
+    padding: .8rem .6rem;
+    border: 1px solid rgba(128, 34, 195, 0.733);
+    border-radius: .25rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    outline: none;
+    margin: 0 0 8px 0;
+}
+
+select {
+    padding: .8rem .6rem .8rem 3rem;
+}
+
+option {
+    padding: .2rem;
+    background-color: rgb(69, 31, 91);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 64, 235);
+}
+
+label {
+    font-weight: 500;
+}
+
+.form-group {
+    margin: .8rem 0;
+}
+
+input:focus {
+    border: 1px solid indigo;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(178, 52, 228, 0.137);
+}
+
+::placeholder {
+    color: inherit;
+}
+
+.from-to {
+    display: flex;
+    align-items: center;
+}
+
+.from-to div:nth-child(2) {
+    font-size: 2rem;
+    margin: 0 8px;
+    align-self: flex-end;
+}
+
+.from-to div:nth-child(2) i {
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form>div {
+    width: 100%;
+
+}
+
+#amount {
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
+button {
+    border: 1px solid transparent;
+    background-color: rgb(172, 64, 235);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    border: 1px solid rgb(172, 64, 235);
+    background-color: rgb(149, 58, 202);
+}
+
+button.working {
+    animation: process 5s linear infinite;
+    background-image: repeating-linear-gradient(45deg, #ffffff22 5%, #ffffff03 9%);
+}
+
+@keyframes process {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: 300px;
+    }
+
+}
+
+.btn-div {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#result p {
+    padding: 0;
+    margin: 0;
+}
+
+#result i {
+    font-size: 1.23rem;
+    vertical-align: middle;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.success {
+    color: rgb(32, 148, 32);
+}

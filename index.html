@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.T0nHecTlyLhSqKFT1ouYOQHaHa?pid=ImgDet&rs=1" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter - Fetch API</title>
+
+</head>
+
+<body>
+    <div class="converter-wrapper">
+        <h3>Currency Converter</h3>
+        <div class="form">
+            <div class="form-group">
+                <label for="amount">Enter Amount</label>
+                <div>
+                    <input type="number" id="amount" placeholder="Amount">
+                </div>
+            </div>
+            <div class="from-to">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <div>
+                        <select id="from" class="rateSelectors"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class='bx bx-sync'></i>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <div>
+                        <select id="to" class="rateSelectors"></select>
+                    </div>
+                </div>
+            </div>
+            <div id="result">
+                <p></p>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button class="convert">Convert</button>
+        </div>
+    </div>
+
+
+ <script src="script.js"></script>
+</body>
+
+</html>
